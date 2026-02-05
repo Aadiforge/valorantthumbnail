@@ -1,0 +1,231 @@
+:root {
+  --bg: #0B0F2B;
+  --purple: #6A5CFF;
+  --pink: #FF4FD8;
+  --blue: #3BD9FF;
+  --cyan: #1EF7D0;
+  --text: #E6ECFF;
+  --muted: #9AA4D6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.hero h1 {
+    align-items: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--purple), var(--pink), var(--blue));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.cta {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--purple), var(--pink));
+  box-shadow: 0 0 30px var(--purple);
+  color: white;
+}
+
+.btn.outline {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn.pink {
+  background: linear-gradient(90deg, var(--pink), var(--purple));
+  box-shadow: 0 0 30px var(--pink);
+  color: white;
+}
+
+/* HERO ART */
+.hero-art {
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, var(--purple), transparent 70%);
+  filter: blur(80px);
+}
+
+.studio-card {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 24px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.services {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  padding: 28px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(106,92,255,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 40px varods;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 40px 40px;
+}
+
+
+.thumb {
+  border-radius: px;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0B0F2B;
+  border: 1px solid;
+  transition: 0.3s;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.thumb:hover {
+  transform: scale(1.04);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--blue);
+  box-shadow: 0 0 20px var(--blue);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+}
+
+footer .line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--purple), transparent);
+  margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+.image-box {
+    position: relative;
+    overflow: hidden;
+    width: 655px;
+    height: 370px;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.image-box:hover {
+  transform: scale(1.04);
+}
+.btn.primary:hover {
+  transform: scale(1.04);
+}
+.btn.pink:hover {
+  transform: scale(1.04);
+}
+.bk {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
